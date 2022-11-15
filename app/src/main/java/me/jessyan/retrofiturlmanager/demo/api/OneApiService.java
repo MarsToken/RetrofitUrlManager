@@ -36,7 +36,7 @@ public interface OneApiService {
     /**
      * 如果不需要多个 BaseUrl, 继续使用初始化时传入 Retrofit 中的默认 BaseUrl, 就不要加上 DOMAIN_NAME_HEADER 这个 Header
      */
-    @Headers({DOMAIN_NAME_HEADER + GITHUB_DOMAIN_NAME})
+    @Headers({DOMAIN_NAME_HEADER + GITHUB_DOMAIN_NAME, "header:toutou"})
     /**
      * 可以通过在注解里给全路径达到使用不同的 BaseUrl, 但是这样无法在 App 运行时动态切换 BaseUrl
      */

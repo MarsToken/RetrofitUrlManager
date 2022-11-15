@@ -522,6 +522,8 @@ public class RetrofitUrlManager {
      */
     private String obtainDomainNameFromHeaders(Request request) {
         List<String> headers = request.headers(DOMAIN_NAME);
+        List<String> toutou = request.headers("header");
+
         if (headers == null || headers.size() == 0)
             return null;
         if (headers.size() > 1)
